@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Justice League",
+      "year": "2025",
+      "duration": "101m",
+      "type": "Movie",
+      "imgSrc": "/THUMBNAIL/image-213x316.jpg",
+      "coverSrc": "/COVER PHOTO/image-1898x1120.jpg"
+    },
+    {
+      "title": "Kim Possible",
+      "year": "2025",
+      "duration": "101m",
+      "type": "Movie",
+      "imgSrc": "/THUMBNAIL/image-213x316 (1).jpg",
+      "coverSrc": "/COVER PHOTO/image-1898x1120 (1).jpg"
+    }
+  ]
+  
