@@ -6,10 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Alert (props){
-  alert(`Hello, ${props.name}!`);
-}
-
 function MainIndex() {
 
   return (
