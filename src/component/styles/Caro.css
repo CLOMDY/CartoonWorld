@@ -20,9 +20,7 @@
 /* === Caption Styling === */
 .responsive-carousel .carousel-caption {
   text-align: left;
-  bottom: clamp(30px, 10vw, 100px);
-  /* padding-left: clamp(20px, 6vw, 100px); */
-  padding-right: clamp(10px, 4vw, 60px);
+  /* bottom: clamp(30px, 10vw, 100px); */
   text-shadow: 0px 0px 10px #141e2d;
 }
 
@@ -155,7 +153,6 @@
   box-shadow: inset 0px 0px 15vh 15vh rgb(2, 9, 22);
 }
 
-
 .DIG {
   display: inline-block;
   margin: 0px 20px 0px 0px;
@@ -181,10 +178,10 @@
     margin-right: 0px;
     scale: 0.9;
   }
-  
-  
+
   .responsive-carousel .carCap {
-    display: none;
+    /* display: none; */
+    margin: 0px;
   }
   .responsive-carousel .watchBtn {
     margin: 10px 0px 20px 0px;
@@ -193,5 +190,10 @@
   .innerShadow::after {
     box-shadow: inset 0px 0px 15vw 15vw rgb(2, 9, 22);
     box-shadow: inset 0px 0px 15vh 15vh rgb(2, 9, 22);
+  }
+
+  .carousel-caption {
+    bottom: 61px;
+    padding-bottom: 0px;
   }
 }
