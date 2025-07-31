@@ -1,0 +1,45 @@
+.about-container {
+    background-color: #0a1220;
+    margin-top: 80px;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 0px 20px 20px #0a1220;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 50px;
+  }
+  
+  .about-content {
+    width: 40%;
+    color: white;
+  }
+  
+  .about-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .about-text {
+    font-size: 11px;
+    color: #8b8b8b;
+    margin-bottom: 10px;
+  }
+  
+  .about-note {
+    font-style: italic;
+    font-size: 10px;
+    color: #555555;
+  }
+  
+  /* Responsive: full width on small screens */
+  @media (max-width: 768px) {
+    .about-container {
+      justify-content: center;
+      height: auto;
+    }
+  
+    .about-content {
+      width: 100%;
+    }
+  }
+  

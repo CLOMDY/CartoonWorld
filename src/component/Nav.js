@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import './Nav.css';
+import './styles/Nav.css';
 
 const navItems = [
   { label: 'Home' },
@@ -26,7 +26,7 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navb">
+    <nav className="navb" style={{position:'absolute',  width:'100%'}}>
       <div className="logo">
         <img src="/logo.png" alt="Logo" />
       </div>
@@ -60,7 +60,7 @@ function Nav() {
             {item.submenu && (
               <div className="dp-content" id={`submenu-${item.label}`}>
                 {item.submenu.map((sub, i) => (
-                  <a key={i} href="#">{sub}</a>
+                  <button key={i} className="link-button" onClick={() => console.log(sub)}>{sub}</button>
                 ))}
               </div>
             )}

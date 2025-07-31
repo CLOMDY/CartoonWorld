@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import { Link } from 'react-router-dom';
 import movies from './Movies.json'; // your JSON data
 import { useMemo } from 'react';
-import './Caro.css';
+import './styles/Caro.css';
 
 function getRandomMovies(data, count = 12) {
     const shuffled = [...data].sort(() => 0.5 - Math.random());
@@ -11,13 +11,12 @@ function getRandomMovies(data, count = 12) {
 }
 
 function Caro() {
-    const randomMovies = useMemo(() => getRandomMovies(movies), [movies]);
+    const randomMovies = useMemo(() => getRandomMovies(movies), []);
 
     return (
         <div
-            id="carouselExampleCaptions" 
+            id="carouselExampleCaptions"
             className="carousel slide responsive-carousel innerShadow"
-            style={{ position: 'absolute', top: '0px', width: '100%' }}
             data-bs-ride="carousel"
             data-bs-interval="3000"
         >
@@ -46,12 +45,11 @@ function Caro() {
                             <div style={{ color: '#e1e1e1' }}>
                                 <div className="HDBtn">HD</div>
                                 <div className="DIG">Duration: {movie.duration}</div>
-                                <div className="DIG">IMDB: 8.5</div> {/* You can replace with movie.imdb if available */}
-                                <div className="DIG">Genre: Action, Adventure</div> {/* Replace with actual genre if available */}
+                                <div className="DIG">IMDB: {movie.imdb}</div> {/* You can replace with movie.imdb if available */}
+                                <div className="DIG">Genre: {movie.genre}</div> {/* Replace with actual genre if available */}
                             </div>
                             <p className="carCap">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptate culpa nulla nobis
-                                eligendi magni delectus recusandae enim esse exercitationem.
+                                {movie.description}
                             </p>
                             <Link
                                 to="/movie"

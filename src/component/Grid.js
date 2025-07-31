@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { Link } from 'react-router-dom';
-import './styles/Nav.css';
+import './styles/Grid.css';
 import movies from './Movies.json';
-function AllMain() {
+function Grid() {
   return (
-    <div style={{ top: "624px", position: "relative", color: "#b4b4b4" }} class="container">
+    <div class="container" style={{ paddingTop: "40px", paddingBottom: "30px" }}>
       <p style={{ color: "#6c6c6c", fontSize: "14px", paddingTop: "20px", paddingBottom: "20px", textAlign: "center" }}>Are you
         a movie lover
         Are you a cartoon enthusiast searching for the ultimate site to watch your favorite animated series? Look no
@@ -22,9 +22,10 @@ function AllMain() {
         Catroon World isn’t just a site—it’s a community that puts animation lovers first. Check us out today—you’ll
         be glad you did!</p>
       <ul class="nav nav-tabs" id="myTab" role="tablist" style={{ border: "0px" }}>
-        <li class=" nav-item" style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px" }}>
+        <li class=" nav-item" style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white'}}>
           Trending
-        </li>
+          <hr style={{ display: "block", width: "80%", marginTop: "0px" }} />
+          </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link navbtn active" id="list1-tab" data-bs-toggle="tab" data-bs-target="#list1"
             type="button" role="tab" aria-controls="list1" aria-selected="true"><i
@@ -44,7 +45,8 @@ function AllMain() {
           <div class="info">
             <div class="row" style={{ marginBottom: "20px" }}>
               {movies.map((movie, index) => (
-                <div className="col" key={index} style={{ padding: "5px" }}>
+                <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+
                   <Link
                     to="/movie"
                     style={{ textDecoration: "none", color: "white" }}
@@ -56,12 +58,11 @@ function AllMain() {
                   >
                     <div className="thumb">
                       <div className="iconBtn">
-                        <i className="fa" style={{ position: "relative", top: "13px", left: "21px" }}>
-                          &#xf04b;
-                        </i>
+                        <i className="fa">&#xf04b;</i>
                       </div>
                       <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
                     </div>
+
                     <div className="titleName">{movie.title}</div>
                     <div className="iconContent">
                       <div className="iconYandDur">{movie.year}</div>
@@ -79,7 +80,8 @@ function AllMain() {
           <div class="info">
             <div className="row" style={{ marginBottom: "20px" }}>
               {movies.slice().reverse().map((movie, index) => (
-                <div className="col" key={index} style={{ padding: "5px" }}>
+                <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+
                   <Link
                     to="/movie"
                     style={{ textDecoration: "none", color: "white" }}
@@ -91,15 +93,11 @@ function AllMain() {
                   >
                     <div className="thumb">
                       <div className="iconBtn">
-                        <i
-                          className="fa"
-                          style={{ position: "relative", top: "13px", left: "21px" }}
-                        >
-                          &#xf04b;
-                        </i>
+                        <i className="fa">&#xf04b;</i>
                       </div>
                       <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
                     </div>
+
                     <div className="titleName">{movie.title}</div>
                     <div className="iconContent">
                       <div className="iconYandDur">{movie.year}</div>
@@ -115,13 +113,14 @@ function AllMain() {
           </div>
         </div>
 
-        <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px" }}>
+        <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white' }}>
           Latest Movies
           <hr style={{ display: "block", width: "125px", marginTop: "0px" }} />
         </div>
         <div class="row" style={{ marginBottom: "20px" }}>
           {movies.map((movie, index) => (
-            <div className="col" key={index} style={{ padding: "5px" }}>
+            <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+
               <Link
                 to="/movie"
                 style={{ textDecoration: "none", color: "white" }}
@@ -133,12 +132,11 @@ function AllMain() {
               >
                 <div className="thumb">
                   <div className="iconBtn">
-                    <i className="fa" style={{ position: "relative", top: "13px", left: "21px" }}>
-                      &#xf04b;
-                    </i>
+                    <i className="fa">&#xf04b;</i>
                   </div>
                   <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
                 </div>
+
                 <div className="titleName">{movie.title}</div>
                 <div className="iconContent">
                   <div className="iconYandDur">{movie.year}</div>
@@ -150,13 +148,14 @@ function AllMain() {
             </div>
           ))}
         </div>
-        <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px" }}>
+        <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white' }}>
           Latest TV Shows
           <hr style={{ display: "block", width: "125px", marginTop: "0px" }} />
         </div>
         <div className="row" style={{ marginBottom: "20px" }}>
           {movies.slice().reverse().map((movie, index) => (
-            <div className="col" key={index} style={{ padding: "5px" }}>
+            <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+
               <Link
                 to="/movie"
                 style={{ textDecoration: "none", color: "white" }}
@@ -168,15 +167,11 @@ function AllMain() {
               >
                 <div className="thumb">
                   <div className="iconBtn">
-                    <i
-                      className="fa"
-                      style={{ position: "relative", top: "13px", left: "21px" }}
-                    >
-                      &#xf04b;
-                    </i>
+                    <i className="fa">&#xf04b;</i>
                   </div>
                   <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
                 </div>
+
                 <div className="titleName">{movie.title}</div>
                 <div className="iconContent">
                   <div className="iconYandDur">{movie.year}</div>
@@ -188,13 +183,13 @@ function AllMain() {
             </div>
           ))}
         </div>
-        <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px" }}>
+        <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white' }}>
           Coming Soon
-          <hr style={{ display: "block", width: "125px", marginTop: "0px" }} />
+          <hr style={{ display: "block", width: "125px", marginTop: "0px"}} />
         </div>
         <div className="row" style={{ marginBottom: "20px" }}>
           {[...movies].sort(() => Math.random() - 0.5).map((movie, index) => (
-            <div className="col" key={index} style={{ padding: "5px" }}>
+            <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
               <Link
                 to="/movie"
                 style={{ textDecoration: "none", color: "white" }}
@@ -206,15 +201,11 @@ function AllMain() {
               >
                 <div className="thumb">
                   <div className="iconBtn">
-                    <i
-                      className="fa"
-                      style={{ position: "relative", top: "13px", left: "21px" }}
-                    >
-                      &#xf04b;
-                    </i>
+                    <i className="fa">&#xf04b;</i>
                   </div>
                   <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
                 </div>
+
                 <div className="titleName">{movie.title}</div>
                 <div className="iconContent">
                   <div className="iconYandDur">{movie.year}</div>
@@ -235,4 +226,4 @@ function AllMain() {
   );
 }
 
-export default AllMain;
+export default Grid;

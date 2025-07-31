@@ -1,120 +1,168 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  background-color: #020916;
-  width: 100%;
-}
-
-
-
-.thumb {
+.navb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(10px, 2vw, 30px);
+  background: transparent;
+  padding: 10px 30px;
   position: relative;
-  display: inline-block;
+  z-index: 10;
+  flex-wrap: nowrap;
 }
 
-.thumb::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(2, 9, 22, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.logo img {
+  height: clamp(40px, 6vw, 70px);
+  flex-shrink: 0;
 }
 
-.thumb:hover::after {
-  opacity: 1;
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
-.iconBtn {
-  width: 51px;
-  height: 51px;
-  border-radius: 50%;
-  background: #83d147;
-  position: absolute;
+.search-box {
+  width: clamp(150px, 22vw, 300px);
+  height: clamp(30px, 4vw, 40px);
+  padding: 0 15px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  top: 85px;
-  left: 51px;
+  border: none;
+}
+
+.search-box::placeholder {
+  font-size: clamp(11px, 1.2vw, 16px);
+}
+
+.search-button {
+  margin-left: -35px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hamburger {
   display: none;
-  z-index: 5;
-}
-
-.thumb:hover .iconBtn {
-  display: block;
-}
-
-
-.navbtn {
-  border: 0px;
-  border-radius: 5px;
-  width: 131px;
-  font-size: 16px;
-  padding: 4px;
-  margin-left: 5px;
-}
-
-.nav-tabs .nav-link {
-  border: 0px;
-  color: #6c757d;
-  background-color: #212529;
-}
-
-.nav-tabs .nav-link.active {
-  border: 0px;
-  color: #212529;
-  background-color: #79c142;
-}
-
-.fa-play-circle:before {
-  content: "\f144";
-  margin-right: 10px;
-}
-
-.fa-list:before {
-  margin-right: 10px;
-  content: "\f03a";
-}
-
-.titleName {
-  font-size: 14px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 155px;
+  background: none;
+  border: none;
+  font-size: 24px;
   color: white;
-  margin-top: 5px;
+  margin-left: 10px;
 }
 
-.iconImg {
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.5vw, 20px);
+  flex-wrap: nowrap;
+}
+
+.dpb {
+  font-size: clamp(12px, 1.3vw, 20px);
+  padding: 8px 12px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-shadow: 1px 1px 20px #000000;
+}
+
+.dp {
+  position: relative;
+}
+
+.dp-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #141e2d;
+  padding: 10px;
+  min-width: 180px;
   border-radius: 5px;
-  height: 100%;
-  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.iconContent {
-  font-size: 13px;
-  margin-top: 5px;
-  color: #bfbfbf;
+.dp-content a {
+  display: block;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
 }
 
-.iconYandDur {
-  display: inline-block;
-  position: relative;
-  top: 1px;
+.dp-content a:hover {
+  background-color: #1c365c;
+  color: #79c142;
 }
 
-.MorTY {
-  border: 1px solid;
-  border-radius: 3px;
-  padding: 0px 5px 1px 5px;
-  float: right;
+/* Show dropdown on hover (desktop only) */
+@media (min-width: 783px) {
+  .dp:hover .dp-content {
+    display: block;
+  }
 }
 
-.iconDot {
-  display: inline-block;
-  font-size: 5px;
-  margin-left: 3px;
-  margin-right: 3px;
-  position: relative;
-  bottom: 1px;
+/* Mobile styles */
+@media (max-width: 782px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    /* background: #0a0a0a; */
+    padding: 10px 20px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .dpb {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dp-content {
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    background: transparent;
+    padding-left: 10px;
+  }
+
+  .dp-content a {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 782px) {
+  .dp-content {
+    display: none;
+    position: relative;
+    background: transparent;
+    padding-left: 10px;
+    box-shadow: none;
+  }
+
+  .dp-content.show-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .dp-content a {
+    padding-left: 20px;
+  }
 }
