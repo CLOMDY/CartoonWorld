@@ -1,6 +1,6 @@
 import Nav from './component/Nav';
 import Caro from './component/Caro';
-import AllMain from './component/AllMain';
+import Grid from './component/Grid';
 import AboutUs from './component/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -16,7 +16,7 @@ function MainIndex() {
 
       <Caro />
 
-      <AllMain />
+      <Grid />
     
       <AboutUs />
     </>

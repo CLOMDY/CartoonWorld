@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Nav from './component/Nav';
 import InnerShadow from './component/InnerShadow';
 import MovieMain from './component/MovieMain';

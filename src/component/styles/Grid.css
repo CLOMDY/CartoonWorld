@@ -1,0 +1,238 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  background-color: #020916;
+  width: 100%;
+}
+
+.thumb {
+  position: relative;
+  display: inline-block;
+}
+
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 9, 22, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb:hover::after {
+  opacity: 1;
+}
+
+.iconBtn {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background: #83d147;
+  position: absolute;
+  color: white;
+  top: 85px;
+  left: 51px;
+  display: none;
+  z-index: 5;
+}
+
+.thumb:hover .iconBtn {
+  display: block;
+}
+
+.navbtn {
+  border: 0px;
+  border-radius: 5px;
+  width: 131px;
+  font-size: 16px;
+  padding: 4px;
+  margin-left: 5px;
+}
+
+.nav-tabs .nav-link {
+  border: 0px;
+  color: #6c757d;
+  background-color: #212529;
+}
+
+.nav-tabs .nav-link.active {
+  border: 0px;
+  color: #212529;
+  background-color: #79c142;
+}
+
+.fa-play-circle:before {
+  content: "\f144";
+  margin-right: 10px;
+}
+
+.fa-list:before {
+  margin-right: 10px;
+  content: "\f03a";
+}
+
+.titleName {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 155px;
+  color: white;
+  margin-top: 5px;
+}
+
+.iconImg {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.iconContent {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #bfbfbf;
+}
+
+.iconYandDur {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+.MorTY {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0px 5px 1px 5px;
+  float: right;
+}
+
+.iconDot {
+  display: inline-block;
+  font-size: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: relative;
+  bottom: 1px;
+}
+
+/* Responsive Grid System */
+@media (min-width: 576px) {
+  .col {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex: 0 0 auto;
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/* --- Centered Icon Button on Hover --- */
+.thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumb img.iconImg {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+.iconBtn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #83d147;
+  color: white;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.iconBtn i {
+  position: absolute;
+  top: 32%;
+  left: 38%;
+}
+
+.iconBtn:hover {
+  background: #6fbf3b;
+}
+
+.thumb:hover .iconBtn {
+  opacity: 1;
+}
+
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 9, 22, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb:hover::after {
+  opacity: 1;
+}
+
+/* Shrink below 450px */
+@media (max-width: 450px) {
+  .navbtn {
+    font-size: 12px;
+    padding: 4px 8px;
+    width: auto;
+    min-width: 70px;
+  }
+
+  .navbtn i {
+    margin-right: 4px;
+    font-size: 14px;
+  }
+}
+
+/* Shrink further below 320px */
+@media (max-width: 320px) {
+  .navbtn {
+    font-size: 10px;
+    padding: 3px 6px;
+    min-width: 60px;
+  }
+
+  .navbtn i {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+}
