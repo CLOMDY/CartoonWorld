@@ -1,15 +1,18 @@
 .innerShadow1 {
   position: relative;
-  top: 92px;
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
 .innerShadow1::after {
   content: "";
   position: absolute;
   inset: 0;
-  box-shadow: inset 0 0 200px 150px rgb(2, 9, 22);
   pointer-events: none;
-  
+  z-index: 1;
+  box-shadow: inset 0px 0px 15vw 15vw rgb(2, 9, 22);
+  box-shadow: inset 0px 0px 15vh 15vh rgb(2, 9, 22);
 }
 
 .innerShadow1.no-shadow::after {
