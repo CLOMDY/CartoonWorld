@@ -10,14 +10,9 @@ function MainIndex() {
 
   return (
     <>
-      {/* <Alert name = "USER"/> */}
-
       <Nav />
-
       <Caro />
-
       <Grid />
-    
       <AboutUs />
     </>
   );
