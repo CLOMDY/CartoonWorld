@@ -16,7 +16,7 @@ function Caro() {
     return (
         <div
             id="carouselExampleCaptions"
-            className="carousel slide responsive-carousel"
+            className="carousel slide responsive-carousel innerShadow"
             data-bs-ride="carousel"
             data-bs-interval="3000"
             data-bs-touch="true"
