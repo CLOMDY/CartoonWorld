@@ -19,6 +19,8 @@ function Caro() {
             className="carousel slide responsive-carousel innerShadow"
             data-bs-ride="carousel"
             data-bs-interval="3000"
+            data-bs-touch="true"
+            data-bs-pause="false"
         >
             {/* Carousel Indicators */}
             <div className="carousel-indicators" style={{ bottom: '30px' }}>
