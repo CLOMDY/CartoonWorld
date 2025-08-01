@@ -16,6 +16,7 @@ function getRandomMovies(data, count = 12) {
 function Caro() {
     const randomMovies = useMemo(() => getRandomMovies(movies), []);
     const carouselRef = useRef();
+    const isDesktop = window.innerWidth >= 768;
 
     useEffect(() => {
         if (carouselRef.current) {
@@ -23,7 +24,7 @@ function Caro() {
                 interval: 3000,
                 ride: 'carousel',
                 touch: true,
-                pause: false,
+                pause: isDesktop ? 'hover' : false,
             });
         }
     }, []);
