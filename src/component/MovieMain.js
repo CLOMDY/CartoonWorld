@@ -96,12 +96,12 @@ function MovieMain() {
             </div>
             <div className="row" style={{ marginBottom: '21px' }}>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (7).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (7).jpg" alt="Thumbnail for Generator Rex"/>
                         </div>
                         <div class="titleName1">
                             Generator Rex
@@ -123,12 +123,12 @@ function MovieMain() {
                     </a>
                 </div>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (9).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (9).jpg" alt="Thumbnail for Teen Titans"/>
                         </div>
                         <div class="titleName1">
                             Teen Titans
@@ -150,12 +150,12 @@ function MovieMain() {
                     </a>
                 </div>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (10).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (10).jpg" alt="Thumbnail for Teenage Mutant Ninja Turtles"/>
                         </div>
                         <div class="titleName1">
                             Teenage Mutant Ninja Turtles
@@ -179,12 +179,12 @@ function MovieMain() {
             </div>
             <div class="row" style={{ marginBottom: '21px' }}>
             <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (5).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (5).jpg" alt="Thumbnail for Batman: The Animated Series"/>
                         </div>
                         <div class="titleName1">
                             Batman: The Animated Series
@@ -206,12 +206,12 @@ function MovieMain() {
                     </a>
                 </div>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (1).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (1).jpg" alt="Thumbnail for Kim Possible"/>
                         </div>
                         <div class="titleName1">
                             Kim Possible
@@ -233,12 +233,12 @@ function MovieMain() {
                     </a>
                 </div>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (2).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (2).jpg" alt="Thumbnail for Scooby-Doo! Mystery Incorporated"/>
                         </div>
                         <div class="titleName1">
                             Scooby-Doo! Mystery Incorporated
@@ -262,12 +262,12 @@ function MovieMain() {
             </div>
             <div class="row" style={{ marginBottom: '21px' }}>
             <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (11).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (11).jpg" alt="Thumbnail for The Avengers: Earth's Mightiest Heroes"/>
                         </div>
                         <div class="titleName1">
                             The Avengers: Earth's Mightiest Heroes
@@ -289,12 +289,12 @@ function MovieMain() {
                     </a>
                 </div>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (4).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (4).jpg" alt="Thumbnail for Samurai Jack"/>
                         </div>
                         <div class="titleName1">
                             Samurai Jack
@@ -316,12 +316,12 @@ function MovieMain() {
                     </a>
                 </div>
                 <div class="col smallCol">
-                    <a href="" style={{textDecoration: "none", color: "white"}}>
+                    <a href="#!" style={{textDecoration: "none", color: "white"}}>
                         <div class="thumb1">
                             <div class="iconBtn1">
                                 <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                             </div>
-                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (6).jpg"/>
+                            <img class="iconImg1" src="./THUMBNAIL/image-213x316 (6).jpg" alt="Thumbnail for Trollhunters: Tales of Arcadia"/>
                         </div>
                         <div class="titleName1">
                             Trollhunters: Tales of Arcadia

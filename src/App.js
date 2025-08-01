@@ -1,24 +1,18 @@
-
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'font-awesome/css/font-awesome.min.css';
 
-import Movie from "./Movie";
+import Movie from './Movie';
 import MainIndex from './MainIndex';
 import TV from './TV';
-
 import ScrollToTop from './ScrollToTop';
-// function Welcome(props) {
-//   return alert(`Hello, ${props.name}`);
-// }
-function App() {
 
+function App() {
   return (
     <>
-    {/* <Welcome name="User" /> */}
-    <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainIndex />} />
         <Route path="/movie" element={<Movie />} />
