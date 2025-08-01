@@ -473,7 +473,7 @@ function TVMain() {
                                 <div class="iconBtn1">
                                     <i className="fa" style={{ position: 'relative', top: '13px', left: '21px' }}>&#xf04b;</i>
                                 </div>
-                                <img class="iconImg1" src="./THUMBNAIL/image-213x316 (6).jpg" />
+                                <img class="iconImg1" src="./THUMBNAIL/image-213x316 (6).jpg" alt="Trollhunters: Tales of Arcadia Thumbnail" />
                             </div>
                             <div class="titleName1">
                                 Trollhunters: Tales of Arcadia
