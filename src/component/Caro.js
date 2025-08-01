@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { Link } from 'react-router-dom';
 import movies from './Movies.json'; // your JSON data
-import { useMemo } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min';
 import './styles/Caro.css';
 
 function getRandomMovies(data, count = 12) {
@@ -10,17 +11,31 @@ function getRandomMovies(data, count = 12) {
     return shuffled.slice(0, count);
 }
 
+
+
 function Caro() {
     const randomMovies = useMemo(() => getRandomMovies(movies), []);
+    const carouselRef = useRef();
+
+    useEffect(() => {
+        if (carouselRef.current) {
+            new bootstrap.Carousel(carouselRef.current, {
+                interval: 3000,
+                ride: 'carousel',
+                touch: true,
+                pause: false,
+            });
+        }
+    }, []);
 
     return (
         <div
             id="carouselExampleCaptions"
+            ref={carouselRef}
             className="carousel slide responsive-carousel innerShadow"
             data-bs-ride="carousel"
             data-bs-interval="3000"
             data-bs-touch="true"
-            data-bs-pause="false"
         >
             {/* Carousel Indicators */}
             <div className="carousel-indicators" style={{ bottom: '30px' }}>
