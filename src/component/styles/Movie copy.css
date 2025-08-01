@@ -1,0 +1,135 @@
+.innerShadow1 {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
+}
+
+.innerShadow1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  box-shadow: inset 0px 0px 15vw 15vw rgb(2, 9, 22);
+  box-shadow: inset 0px 0px 15vh 15vh rgb(2, 9, 22);
+}
+
+.innerShadow1.no-shadow::after {
+  box-shadow: none;
+}
+
+.movieDis{
+  position: relative;
+  top: 71px;
+}
+
+.topIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #e0e0e0a2;
+  position: absolute;
+  color: white;
+  top: 41%;
+  left: 46%;
+  display: block;
+  z-index: 5;
+}
+
+.iconBtn1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #83d147;
+  position: absolute;
+  color: white;
+  top: 99px;
+  left: 56px;
+  display: none;
+  z-index: 5;
+}
+
+.thumb1:hover .iconBtn1 {
+  display: block;
+}
+
+.thumb1 {
+  position: relative;
+  display: inline-block;
+}
+
+.thumb1::after {
+  content: "";
+  width: 111%;
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 9, 22, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb1:hover::after {
+  opacity: 1;
+}
+
+.titleName1 {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 111%;
+  color: white;
+  margin-top: 5px;
+}
+
+.iconImg1 {
+  border-radius: 5px;
+  width: 111%;
+}
+
+.iconContent1 {
+  font-size: 12px;
+  width: 111%;
+  margin-top: 5px;
+  color: #bfbfbf;
+}
+
+.iconYandDur1 {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+.MorTY1 {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 1px 5px 1px 5px;
+  float: right;
+}
+
+.iconDot1 {
+  display: inline-block;
+  font-size: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: relative;
+  bottom: 1px;
+}
+
+.HDBtn1 {
+  display: inline-block;
+  background-color: #79c142;
+  border-radius: 15px;
+  width: 40px;
+  color: #141e2d;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.smallCol {
+  width: 20px;
+}
