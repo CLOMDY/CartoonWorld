@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import './styles/Movie.css';
+import './styles/Movie copy.css';
 import { useLocation } from 'react-router-dom';
 
 function InnerShadow() {
