@@ -27,7 +27,7 @@ function Caro() {
                 pause: isDesktop ? 'hover' : false,
             });
         }
-    }, []);
+    }, [isDesktop]);
 
     return (
         <div
