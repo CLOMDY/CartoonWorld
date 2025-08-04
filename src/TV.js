@@ -1,5 +1,5 @@
 import Nav from './component/Nav';
-import InnerShadow from './component/InnerShadow';
+import Player from './component/Player';
 import AboutUs from './component/AboutUs';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +11,7 @@ function TV() {
   return (
     <>
       <Nav />
-      <InnerShadow />
+      <Player />
       <TVMain />
       <AboutUs />
     </>

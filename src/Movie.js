@@ -1,5 +1,5 @@
 import Nav from './component/Nav';
-import InnerShadow from './component/InnerShadow';
+import Player from './component/Player';
 import MovieMain from './component/MovieMain';
 import AboutUs from './component/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,7 @@ function Movie() {
   return (
     <>
       <Nav />
-      <InnerShadow />
+      <Player />
       <MovieMain />
       <AboutUs />
     </>

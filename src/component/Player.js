@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import './styles/Movie copy.css';
+import './styles/Player.css';
 import { useLocation } from 'react-router-dom';
 
-function InnerShadow() {
+function Player() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const location = useLocation();
-  const {coverSrc} = location.state || {};
+  const { coverSrc } = location.state || {};
 
   const handlePlay = () => {
     setIsPlaying(true);
@@ -23,18 +23,9 @@ function InnerShadow() {
       {!isPlaying && (
         <>
           <div className="topIcon">
-            <i
-              className="fa"
-              style={{
-                position: 'relative',
-                top: '29px',
-                left: '38px',
-                fontSize: '43px'
-              }}
-            >
-              &#xf04b;
-            </i>
+            <i className="fa">&#xf04b;</i>
           </div>
+
           <img src={coverSrc} style={{ width: '100%' }} alt="cover" />
         </>
       )}
@@ -49,4 +40,4 @@ function InnerShadow() {
   );
 }
 
-export default InnerShadow;
+export default Player;

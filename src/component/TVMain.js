@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { useLocation } from 'react-router-dom';
 
-import './styles/Movie.css';
+import './styles/Player.css';
 
 function TVMain() {
     const location = useLocation();
