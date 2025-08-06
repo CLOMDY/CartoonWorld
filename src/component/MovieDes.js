@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import movies from './Movies.json';
 import './styles/MovieDes.css';
 
@@ -18,10 +17,6 @@ function MovieDes() {
     const {
         imgSrc,
         genre,
-        imdb,
-        year,
-        duration,
-        type,
         country,
         released,
         production,
@@ -30,8 +25,6 @@ function MovieDes() {
         "long-description": longDescription
     } = movie;
 
-
-    const relatedMovies = movies.filter(m => m.title !== title).slice(0, 6);
 
     return (
         <div className="container-fluid px-4 py-4 movieDis text-white">

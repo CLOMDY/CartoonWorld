@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import { Link } from 'react-router-dom';
 import './styles/Grid.css';
 import movies from './Movies.json';
 import { useNavigate } from 'react-router-dom';
