@@ -24,19 +24,6 @@ body {
   opacity: 1;
 }
 
-.iconBtn {
-  width: 61px;
-  height: 61px;
-  border-radius: 50%;
-  background: #83d147;
-  position: absolute;
-  color: white;
-  top: 85px;
-  left: 51px;
-  display: none;
-  z-index: 5;
-}
-
 .thumb:hover .iconBtn {
   display: block;
 }
@@ -77,7 +64,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 155px;
+  width: 100%;
   color: white;
   margin-top: 5px;
 }

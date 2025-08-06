@@ -3,7 +3,12 @@ import 'font-awesome/css/font-awesome.min.css';
 import { Link } from 'react-router-dom';
 import './styles/Grid.css';
 import movies from './Movies.json';
+import { useNavigate } from 'react-router-dom';
+
+
 function Grid() {
+  const navigate = useNavigate();
+
   return (
     <div class="container" style={{ paddingTop: "40px", paddingBottom: "30px" }}>
       <p style={{ color: "#6c6c6c", fontSize: "14px", paddingTop: "20px", paddingBottom: "20px", textAlign: "center" }}>Are you
@@ -22,10 +27,10 @@ function Grid() {
         Catroon World isn’t just a site—it’s a community that puts animation lovers first. Check us out today—you’ll
         be glad you did!</p>
       <ul class="nav nav-tabs" id="myTab" role="tablist" style={{ border: "0px" }}>
-        <li class=" nav-item" style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white'}}>
+        <li class=" nav-item" style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white' }}>
           Trending
           <hr style={{ display: "block", width: "80%", marginTop: "0px" }} />
-          </li>
+        </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link navbtn active" id="list1-tab" data-bs-toggle="tab" data-bs-target="#list1"
             type="button" role="tab" aria-controls="list1" aria-selected="true"><i
@@ -45,32 +50,46 @@ function Grid() {
           <div class="info">
             <div class="row" style={{ marginBottom: "20px" }}>
               {movies.map((movie, index) => (
-                <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+                <div
+                  className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5"
+                  key={index}
+                  style={{ padding: "5px", cursor: "pointer" }}
+                  onClick={(e) => {
+                    const type = e.currentTarget.querySelector(".MorTY")?.textContent;
 
-                  <Link
-                    to="/movie"
-                    style={{ textDecoration: "none", color: "white" }}
-                    state={{
-                      imgSrc: movie.imgSrc,
-                      title: movie.title,
-                      coverSrc: movie.coverSrc,
-                    }}
-                  >
-                    <div className="thumb">
-                      <div className="iconBtn">
-                        <i className="fa">&#xf04b;</i>
-                      </div>
-                      <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+                    if (type === "TV") {
+                      navigate("/tv", {
+                        state: {
+                          imgSrc: movie.imgSrc,
+                          title: movie.title,
+                          coverSrc: movie.coverSrc,
+                        },
+                      });
+                    } else if (type === "Movie") {
+                      navigate("/movie", {
+                        state: {
+                          imgSrc: movie.imgSrc,
+                          title: movie.title,
+                          coverSrc: movie.coverSrc,
+                        },
+                      });
+                    }
+                  }}
+                >
+                  <div className="thumb">
+                    <div className="iconBtn">
+                      <i className="fa">&#xf04b;</i>
                     </div>
+                    <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+                  </div>
 
-                    <div className="titleName">{movie.title}</div>
-                    <div className="iconContent">
-                      <div className="iconYandDur">{movie.year}</div>
-                      <div className="iconDot">&#9679;</div>
-                      <div className="iconYandDur">{movie.duration}</div>
-                      <div className="MorTY">{movie.type}</div>
-                    </div>
-                  </Link>
+                  <div className="titleName">{movie.title}</div>
+                  <div className="iconContent">
+                    <div className="iconYandDur">{movie.year}</div>
+                    <div className="iconDot">&#9679;</div>
+                    <div className="iconYandDur">{movie.duration}</div>
+                    <div className="MorTY">{movie.type}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -80,32 +99,46 @@ function Grid() {
           <div class="info">
             <div className="row" style={{ marginBottom: "20px" }}>
               {movies.slice().reverse().map((movie, index) => (
-                <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+                <div
+                  className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5"
+                  key={index}
+                  style={{ padding: "5px", cursor: "pointer" }}
+                  onClick={(e) => {
+                    const type = e.currentTarget.querySelector(".MorTY")?.textContent;
 
-                  <Link
-                    to="/movie"
-                    style={{ textDecoration: "none", color: "white" }}
-                    state={{
-                      imgSrc: movie.imgSrc,
-                      title: movie.title,
-                      coverSrc: movie.coverSrc,
-                    }}
-                  >
-                    <div className="thumb">
-                      <div className="iconBtn">
-                        <i className="fa">&#xf04b;</i>
-                      </div>
-                      <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+                    if (type === "TV") {
+                      navigate("/tv", {
+                        state: {
+                          imgSrc: movie.imgSrc,
+                          title: movie.title,
+                          coverSrc: movie.coverSrc,
+                        },
+                      });
+                    } else if (type === "Movie") {
+                      navigate("/movie", {
+                        state: {
+                          imgSrc: movie.imgSrc,
+                          title: movie.title,
+                          coverSrc: movie.coverSrc,
+                        },
+                      });
+                    }
+                  }}
+                >
+                  <div className="thumb">
+                    <div className="iconBtn">
+                      <i className="fa">&#xf04b;</i>
                     </div>
+                    <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+                  </div>
 
-                    <div className="titleName">{movie.title}</div>
-                    <div className="iconContent">
-                      <div className="iconYandDur">{movie.year}</div>
-                      <div className="iconDot">&#9679;</div>
-                      <div className="iconYandDur">{movie.duration}</div>
-                      <div className="MorTY">TV</div>
-                    </div>
-                  </Link>
+                  <div className="titleName">{movie.title}</div>
+                  <div className="iconContent">
+                    <div className="iconYandDur">{movie.year}</div>
+                    <div className="iconDot">&#9679;</div>
+                    <div className="iconYandDur">{movie.duration}</div>
+                    <div className="MorTY">TV</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -119,32 +152,46 @@ function Grid() {
         </div>
         <div class="row" style={{ marginBottom: "20px" }}>
           {movies.map((movie, index) => (
-            <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+            <div
+              className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5"
+              key={index}
+              style={{ padding: "5px", cursor: "pointer" }}
+              onClick={(e) => {
+                const type = e.currentTarget.querySelector(".MorTY")?.textContent;
 
-              <Link
-                to="/movie"
-                style={{ textDecoration: "none", color: "white" }}
-                state={{
-                  imgSrc: movie.imgSrc,
-                  title: movie.title,
-                  coverSrc: movie.coverSrc,
-                }}
-              >
-                <div className="thumb">
-                  <div className="iconBtn">
-                    <i className="fa">&#xf04b;</i>
-                  </div>
-                  <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+                if (type === "TV") {
+                  navigate("/tv", {
+                    state: {
+                      imgSrc: movie.imgSrc,
+                      title: movie.title,
+                      coverSrc: movie.coverSrc,
+                    },
+                  });
+                } else if (type === "Movie") {
+                  navigate("/movie", {
+                    state: {
+                      imgSrc: movie.imgSrc,
+                      title: movie.title,
+                      coverSrc: movie.coverSrc,
+                    },
+                  });
+                }
+              }}
+            >
+              <div className="thumb">
+                <div className="iconBtn">
+                  <i className="fa">&#xf04b;</i>
                 </div>
+                <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+              </div>
 
-                <div className="titleName">{movie.title}</div>
-                <div className="iconContent">
-                  <div className="iconYandDur">{movie.year}</div>
-                  <div className="iconDot">&#9679;</div>
-                  <div className="iconYandDur">{movie.duration}</div>
-                  <div className="MorTY">{movie.type}</div>
-                </div>
-              </Link>
+              <div className="titleName">{movie.title}</div>
+              <div className="iconContent">
+                <div className="iconYandDur">{movie.year}</div>
+                <div className="iconDot">&#9679;</div>
+                <div className="iconYandDur">{movie.duration}</div>
+                <div className="MorTY">{movie.type}</div>
+              </div>
             </div>
           ))}
         </div>
@@ -154,69 +201,100 @@ function Grid() {
         </div>
         <div className="row" style={{ marginBottom: "20px" }}>
           {movies.slice().reverse().map((movie, index) => (
-            <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
+            <div
+              className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5"
+              key={index}
+              style={{ padding: "5px", cursor: "pointer" }}
+              onClick={(e) => {
+                const type = e.currentTarget.querySelector(".MorTY")?.textContent;
 
-              <Link
-                to="/movie"
-                style={{ textDecoration: "none", color: "white" }}
-                state={{
-                  imgSrc: movie.imgSrc,
-                  title: movie.title,
-                  coverSrc: movie.coverSrc,
-                }}
-              >
-                <div className="thumb">
-                  <div className="iconBtn">
-                    <i className="fa">&#xf04b;</i>
-                  </div>
-                  <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
-                </div>
+                if (type === "TV") {
+                  navigate("/tv", {
+                    state: {
+                      imgSrc: movie.imgSrc,
+                      title: movie.title,
+                      coverSrc: movie.coverSrc,
+                    },
+                  });
+                } else if (type === "Movie") {
+                  navigate("/movie", {
+                    state: {
+                      imgSrc: movie.imgSrc,
+                      title: movie.title,
+                      coverSrc: movie.coverSrc,
+                    },
+                  });
+                }
+              }}
+            >
 
-                <div className="titleName">{movie.title}</div>
-                <div className="iconContent">
-                  <div className="iconYandDur">{movie.year}</div>
-                  <div className="iconDot">&#9679;</div>
-                  <div className="iconYandDur">{movie.duration}</div>
-                  <div className="MorTY">TV</div>
+              <div className="thumb">
+                <div className="iconBtn">
+                  <i className="fa">&#xf04b;</i>
                 </div>
-              </Link>
+                <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+              </div>
+
+              <div className="titleName">{movie.title}</div>
+              <div className="iconContent">
+                <div className="iconYandDur">{movie.year}</div>
+                <div className="iconDot">&#9679;</div>
+                <div className="iconYandDur">{movie.duration}</div>
+                <div className="MorTY">TV</div>
+              </div>
             </div>
           ))}
         </div>
         <div style={{ marginRight: "10px", fontSize: "31px", position: "relative", bottom: "7px", color: 'white' }}>
           Coming Soon
-          <hr style={{ display: "block", width: "125px", marginTop: "0px"}} />
+          <hr style={{ display: "block", width: "125px", marginTop: "0px" }} />
         </div>
         <div className="row" style={{ marginBottom: "20px" }}>
           {[...movies].sort(() => Math.random() - 0.5).map((movie, index) => (
-            <div className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5" key={index} style={{ padding: "5px" }}>
-              <Link
-                to="/movie"
-                style={{ textDecoration: "none", color: "white" }}
-                state={{
-                  imgSrc: movie.imgSrc,
-                  title: movie.title,
-                  coverSrc: movie.coverSrc,
-                }}
-              >
-                <div className="thumb">
-                  <div className="iconBtn">
-                    <i className="fa">&#xf04b;</i>
-                  </div>
-                  <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+            <div
+              className="col-12 col-sm-6 col-md-4 col-lg-4 fixed-1of3"
+              key={index}
+              style={{ padding: "5px" }}
+              onClick={(e) => {
+                const type = e.currentTarget.querySelector(".MorTY")?.textContent;
+
+                if (type === "TV") {
+                  navigate("/tv", {
+                    state: {
+                      imgSrc: movie.imgSrc,
+                      title: movie.title,
+                      coverSrc: movie.coverSrc,
+                    },
+                  });
+                } else if (type === "Movie") {
+                  navigate("/movie", {
+                    state: {
+                      imgSrc: movie.imgSrc,
+                      title: movie.title,
+                      coverSrc: movie.coverSrc,
+                    },
+                  });
+                }
+              }}
+            >
+
+              <div className="thumb">
+                <div className="iconBtn">
+                  <i className="fa">&#xf04b;</i>
+                </div>
+                <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+              </div>
+
+              <div className="titleName">{movie.title}</div>
+              <div className="iconContent">
+                <div className="iconYandDur">{movie.year}</div>
+                <div className="iconDot">&#9679;</div>
+                <div className="iconYandDur">{movie.duration}</div>
+                <div className="MorTY">
+                  {Math.random() > 0.5 ? "Movie" : "TV"}
                 </div>
 
-                <div className="titleName">{movie.title}</div>
-                <div className="iconContent">
-                  <div className="iconYandDur">{movie.year}</div>
-                  <div className="iconDot">&#9679;</div>
-                  <div className="iconYandDur">{movie.duration}</div>
-                  <div className="MorTY">
-                    {Math.random() > 0.5 ? "Movie" : "TV"}
-                  </div>
-
-                </div>
-              </Link>
+              </div>
             </div>
           ))}
         </div>

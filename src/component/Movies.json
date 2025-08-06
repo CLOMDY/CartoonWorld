@@ -8,7 +8,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120.jpg",
     "description": "DC’s greatest heroes team up to battle powerful threats and save the world.",
     "imdb": "6.1",
-    "genre": "Action, Adventure, Fantasy"
+    "genre": "Action, Adventure, Fantasy",
+    "long-description": "Batman and Wonder Woman recruit a team of metahumans to face a catastrophic threat and restore balance after Superman's death.",
+    "country": "USA",
+    "released-date": "2017-11-17",
+    "production": "Warner Bros. Pictures",
+    "casts": "Ben Affleck, Gal Gadot, Henry Cavill, Jason Momoa, Ezra Miller, Ray Fisher",
+    "tags": "superheroes, team-up, DC Comics"
   },
   {
     "title": "Kim Possible",
@@ -19,7 +25,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (1).jpg",
     "description": "A high school student saves the world from evil villains in her spare time.",
     "imdb": "7.2",
-    "genre": "Animation, Action, Comedy"
+    "genre": "Animation, Action, Comedy",
+    "long-description": "Kim Possible balances high school life while battling villains with her sidekick Ron Stoppable and his pet naked mole-rat Rufus.",
+    "country": "USA",
+    "released-date": "2002-06-07",
+    "production": "Walt Disney Television Animation",
+    "casts": "Christy Carlson Romano, Will Friedle, Tahj Mowry, John DiMaggio",
+    "tags": "spy, high school, teen heroine"
   },
   {
     "title": "Scooby-Doo! Mystery Incorporated",
@@ -30,7 +42,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (2).jpg",
     "description": "Scooby and the gang uncover mysteries and dark secrets in their hometown.",
     "imdb": "8.1",
-    "genre": "Animation, Adventure, Comedy"
+    "genre": "Animation, Adventure, Comedy",
+    "long-description": "In a more serialized and darker take on the classic franchise, Mystery Inc. tackles a larger mystery involving their town’s spooky past.",
+    "country": "USA",
+    "released-date": "2010-07-12",
+    "production": "Warner Bros. Animation",
+    "casts": "Frank Welker, Mindy Cohn, Grey Griffin, Matthew Lillard",
+    "tags": "mystery, ghost, friendship, teen detectives"
   },
   {
     "title": "Avatar the Last Airbender",
@@ -41,7 +59,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (3).jpg",
     "description": "Aang, the last Airbender, must master all elements to defeat the Fire Nation.",
     "imdb": "9.3",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "In a world where people can bend the elements, a young monk named Aang must master all four to bring peace and end a long-standing war.",
+    "country": "USA",
+    "released-date": "2005-02-21",
+    "production": "Nickelodeon Animation Studio",
+    "casts": "Zach Tyler Eisen, Mae Whitman, Jack De Sena, Dante Basco",
+    "tags": "bending, elemental powers, fantasy, war"
   },
   {
     "title": "Samurai Jack",
@@ -52,7 +76,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (4).jpg",
     "description": "A samurai warrior is flung into a dystopian future by his arch-nemesis Aku.",
     "imdb": "8.5",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "Trapped in a dystopian future, a noble samurai known only as Jack journeys to defeat the shape-shifting demon Aku and return to the past.",
+    "country": "USA",
+    "released-date": "2001-08-10",
+    "production": "Cartoon Network Studios",
+    "casts": "Phil LaMarr, Mako, Tara Strong, Kevin Michael Richardson",
+    "tags": "samurai, time travel, future, heroism"
   },
   {
     "title": "Batman: The Animated Series",
@@ -63,7 +93,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (5).jpg",
     "description": "Bruce Wayne fights crime in Gotham City as the mysterious Batman.",
     "imdb": "9.0",
-    "genre": "Animation, Action, Crime"
+    "genre": "Animation, Action, Crime",
+    "long-description": "An acclaimed take on the Dark Knight, blending noir storytelling, complex characters, and striking visuals. A cornerstone of superhero animation.",
+    "country": "United States",
+    "released-date": "1992-09-05",
+    "production": "Warner Bros. Animation",
+    "casts": "Kevin Conroy, Mark Hamill, Efrem Zimbalist Jr.",
+    "tags": "batman, gotham, superhero, justice, noir"
   },
   {
     "title": "Trollhunters: Tales of Arcadia ",
@@ -74,7 +110,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (6).jpg",
     "description": "A teenager discovers a secret world of trolls beneath his hometown.",
     "imdb": "8.4",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "Jim Lake Jr. becomes the first human Trollhunter and must defend two worlds against evil. From the imagination of Guillermo del Toro.",
+    "country": "United States",
+    "released-date": "2016-12-23",
+    "production": "DreamWorks Animation Television",
+    "casts": "Anton Yelchin, Kelsey Grammer, Charlie Saxton",
+    "tags": "trolls, magic, fantasy, guillermo del toro, teen hero"
   },
   {
     "title": "Generator Rex",
@@ -85,7 +127,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (7).jpg",
     "description": "A teenager with nanites battles monsters and tries to save humanity.",
     "imdb": "7.6",
-    "genre": "Animation, Action, Sci-Fi"
+    "genre": "Animation, Action, Sci-Fi",
+    "long-description": "Rex Salazar is an EVO with the power to control nanites. He works for Providence to stop threats and uncover his past.",
+    "country": "United States",
+    "released-date": "2010-04-23",
+    "production": "Cartoon Network Studios",
+    "casts": "Daryl Sabara, Grey DeLisle, John DiMaggio",
+    "tags": "nanotech, mutations, action, teen hero, sci-fi"
   },
   {
     "title": "Ben 10",
@@ -96,7 +144,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (8).jpg",
     "description": "Ben Tennyson uses a device called the Omnitrix to transform into various aliens.",
     "imdb": "7.4",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "10-year-old Ben discovers the Omnitrix, gaining powers to transform into different aliens and fight evil alongside his cousin Gwen and Grandpa Max.",
+    "country": "United States",
+    "released-date": "2005-12-27",
+    "production": "Cartoon Network Studios",
+    "casts": "Tara Strong, Paul Eiding, Meagan Smith",
+    "tags": "aliens, omnitrix, hero, sci-fi, cartoon network"
   },
   {
     "title": "Teen Titans",
@@ -107,7 +161,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (9).jpg",
     "description": "Young superheroes team up to fight villains and handle teenage life.",
     "imdb": "7.8",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "Robin leads a team of teen superheroes including Starfire, Raven, Beast Boy, and Cyborg as they balance crimefighting with growing up.",
+    "country": "United States",
+    "released-date": "2003-07-19",
+    "production": "Warner Bros. Animation",
+    "casts": "Scott Menville, Hynden Walch, Greg Cipes",
+    "tags": "teen heroes, superheroes, dc comics, team, titans"
   },
   {
     "title": "Teenage Mutant Ninja Turtles",
@@ -118,7 +178,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (10).jpg",
     "description": "Four mutant turtles trained in ninjitsu fight crime in New York City.",
     "imdb": "7.9",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "Raised in the sewers of New York City and trained by their rat sensei, Splinter, the Teenage Mutant Ninja Turtles take on criminals and supervillains to protect their city.",
+    "country": "USA",
+    "released-date": "February 8, 2003",
+    "production": "4Kids Entertainment, Mirage Studios",
+    "casts": "Michael Sinterniklaas, Wayne Grayson, Sam Riegel, Frank Frankson",
+    "tags": "mutants, ninja, turtles, crime-fighting, sewer, action"
   },
   {
     "title": "The Avengers: Earth's Mightiest Heroes",
@@ -129,7 +195,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (11).jpg",
     "description": "Marvel’s greatest heroes unite to face powerful threats to Earth.",
     "imdb": "8.3",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "As the world's most dangerous super-villains escape from prisons across the globe, a team of heroes must assemble to stop them before it's too late.",
+    "country": "USA",
+    "released-date": "October 20, 2010",
+    "production": "Marvel Animation",
+    "casts": "Eric Loomis, Colleen O'Shaughnessey, Rick D. Wasserman, Fred Tatasciore",
+    "tags": "marvel, avengers, superheroes, team-up, action"
   },
   {
     "title": "Weathering with You",
@@ -140,7 +212,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (12).jpg",
     "description": "A teenage boy runs away to Tokyo and meets a girl who can control the weather.",
     "imdb": "7.5",
-    "genre": "Animation, Drama, Fantasy"
+    "genre": "Animation, Drama, Fantasy",
+    "long-description": "When high-schooler Hodaka runs away to Tokyo, he meets Hina, a girl with a mysterious ability to stop the rain and clear the sky.",
+    "country": "Japan",
+    "released-date": "July 19, 2019",
+    "production": "CoMix Wave Films",
+    "casts": "Kotaro Daigo, Nana Mori, Shun Oguri, Sei Hiraizumi",
+    "tags": "weather, tokyo, love story, magic, fantasy"
   },
   {
     "title": "Suzume",
@@ -151,7 +229,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (13).jpg",
     "description": "A high‑school girl embarks on a mystical journey to close doors causing disasters.",
     "imdb": "7.4",
-    "genre": "Animation, Adventure, Fantasy"
+    "genre": "Animation, Adventure, Fantasy",
+    "long-description": "Suzume follows a young girl who discovers magical doors across Japan that lead to disasters and chaos—doors she must now close before catastrophe strikes.",
+    "country": "Japan",
+    "released-date": "November 11, 2022",
+    "production": "CoMix Wave Films, Toho",
+    "casts": "Nanoka Hara, Hokuto Matsumura, Eri Fukatsu, Shota Sometani",
+    "tags": "door, mystery, earthquake, magical realism, journey"
   },
   {
     "title": "Naruto",
@@ -162,7 +246,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (14).jpg",
     "description": "A young ninja seeks recognition and dreams of becoming the Hokage of his village.",
     "imdb": "8.3",
-    "genre": "Animation, Action, Adventure"
+    "genre": "Animation, Action, Adventure",
+    "long-description": "Naruto Uzumaki, a mischievous ninja with a powerful secret, trains to become the leader of his village and gain the respect of everyone around him.",
+    "country": "Japan",
+    "released-date": "October 3, 2002",
+    "production": "Studio Pierrot",
+    "casts": "Junko Takeuchi, Noriaki Sugiyama, Chie Nakamura, Kazuhiko Inoue",
+    "tags": "ninja, village, power, spirit, legacy, training"
   },
   {
     "title": "Doremon",
@@ -173,7 +263,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (15).jpg",
     "description": "A robotic cat from the future helps a clumsy boy navigate life’s challenges.",
     "imdb": "8.0",
-    "genre": "Animation, Adventure, Comedy"
+    "genre": "Animation, Adventure, Comedy",
+    "long-description": "Doremon, a robotic cat from the 22nd century, is sent to help Nobita, a young boy, improve his future through gadgets and guidance.",
+    "country": "Japan",
+    "released-date": "April 2, 1979",
+    "production": "Shin-Ei Animation",
+    "casts": "Wasabi Mizuta, Megumi Ōhara, Yumi Kakazu, Subaru Kimura",
+    "tags": "robot, future, friendship, comedy, school"
   },
   {
     "title": "Demon Slayer: Kimetsu no Yaiba",
@@ -184,7 +280,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (16).jpg",
     "description": "A young swordsman fights demons to save his sister and avenge his family.",
     "imdb": "8.7",
-    "genre": "Animation, Action, Fantasy"
+    "genre": "Animation, Action, Fantasy",
+    "long-description": "After his family is slaughtered by demons, Tanjiro Kamado joins the Demon Slayer Corps to seek justice and cure his demon-turned sister.",
+    "country": "Japan",
+    "released-date": "April 6, 2019",
+    "production": "Ufotable",
+    "casts": "Natsuki Hanae, Akari Kitō, Hiro Shimono, Yoshitsugu Matsuoka",
+    "tags": "demon, sword, family, revenge, supernatural"
   },
   {
     "title": "Attack on Titan",
@@ -195,7 +297,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (17).jpg",
     "description": "Humanity fights to survive against monstrous giants in a dystopian world.",
     "imdb": "8.8",
-    "genre": "Animation, Action, Drama"
+    "genre": "Animation, Action, Drama",
+    "long-description": "In a world where giants devour humans, Eren Yeager and his friends join the Survey Corps to uncover the truth and fight back.",
+    "country": "Japan",
+    "released-date": "April 7, 2013",
+    "production": "Wit Studio",
+    "casts": "Yuki Kaji, Yui Ishikawa, Marina Inoue, Daisuke Ono",
+    "tags": "giant, survival, mystery, apocalypse, military"
   },
   {
     "title": "Crayon Shin-chan",
@@ -206,7 +314,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (18).jpg",
     "description": "A mischievous five‑year‑old causes hilarious chaos with his wild antics.",
     "imdb": "8.2",
-    "genre": "Animation, Comedy, Family"
+    "genre": "Animation, Comedy, Family",
+    "long-description": "Follow Shin-chan, a cheeky preschooler, as he goes on wild and absurd adventures with his family and friends in Kasukabe.",
+    "country": "Japan",
+    "released-date": "April 13, 1992",
+    "production": "Shin-Ei Animation",
+    "casts": "Akiko Yajima, Miki Narahashi, Keiji Fujiwara, Satomi Kōrogi",
+    "tags": "child, humor, japan, everyday life, prank"
   },
   {
     "title": "Coco",
@@ -217,7 +331,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (19).jpg",
     "description": "A boy journeys to the Land of the Dead to uncover his family’s musical heritage.",
     "imdb": "8.4",
-    "genre": "Animation, Adventure, Family"
+    "genre": "Animation, Adventure, Family",
+    "long-description": "Young Miguel enters the Land of the Dead to find his great-great-grandfather, a legendary musician, and discovers the importance of family and legacy.",
+    "country": "USA",
+    "released-date": "November 22, 2017",
+    "production": "Pixar Animation Studios, Walt Disney Pictures",
+    "casts": "Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach",
+    "tags": "music, afterlife, mexico, family, tradition"
   },
   {
     "title": "How to Train Your Dragon",
@@ -228,7 +348,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (20).jpg",
     "description": "A young Viking befriends a dragon and changes his tribe’s view on the creatures.",
     "imdb": "8.1",
-    "genre": "Animation, Adventure, Family"
+    "genre": "Animation, Adventure, Family",
+    "long-description": "Hiccup, a young Viking, challenges tradition by forming a bond with a dragon and proving that dragons and humans can coexist.",
+    "country": "USA",
+    "released-date": "March 26, 2010",
+    "production": "DreamWorks Animation",
+    "casts": "Jay Baruchel, Gerard Butler, Craig Ferguson, America Ferrera",
+    "tags": "viking, dragon, friendship, fantasy, flying"
   },
   {
     "title": "Your Name.",
@@ -239,7 +365,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (21).jpg",
     "description": "Two teenagers mysteriously swap bodies and form a deep connection across time.",
     "imdb": "8.4",
-    "genre": "Animation, Drama, Fantasy"
+    "genre": "Animation, Drama, Fantasy",
+    "long-description": "Mitsuha and Taki find themselves linked by fate when they begin switching bodies. Their search for each other leads to a time-bending emotional journey.",
+    "country": "Japan",
+    "released-date": "August 26, 2016",
+    "production": "CoMix Wave Films",
+    "casts": "Ryunosuke Kamiki, Mone Kamishiraishi, Ryo Narita, Aoi Yuki",
+    "tags": "body swap, time travel, romance, japan, destiny"
   },
   {
     "title": "Ratatouille",
@@ -250,7 +382,13 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (22).jpg",
     "description": "A rat with culinary dreams befriends a chef to pursue cooking in Paris.",
     "imdb": "8.0",
-    "genre": "Animation, Comedy, Family"
+    "genre": "Animation, Comedy, Family",
+    "long-description": "Remy, a rat with an exceptional sense of taste, partners with a kitchen boy in a famous Paris restaurant to live his dream of becoming a chef.",
+    "country": "USA",
+    "released-date": "June 29, 2007",
+    "production": "Pixar Animation Studios, Walt Disney Pictures",
+    "casts": "Patton Oswalt, Ian Holm, Lou Romano, Peter Sohn",
+    "tags": "cooking, rat, paris, food, dream"
   },
   {
     "title": "Big Hero 6",
@@ -261,6 +399,12 @@
     "coverSrc": "/COVER PHOTO/image-1898x1120 (23).jpg",
     "description": "A robotics prodigy teams up with friends and an inflatable robot to fight crime.",
     "imdb": "7.8",
-    "genre": "Animation, Action, Sci-Fi"
+    "genre": "Animation, Action, Sci-Fi",
+    "long-description": "After a tragedy, Hiro Hamada forms a team of tech-savvy friends and a lovable robot, Baymax, to stop a masked villain and uncover a deeper mystery.",
+    "country": "USA",
+    "released-date": "November 7, 2014",
+    "production": "Walt Disney Animation Studios",
+    "casts": "Ryan Potter, Scott Adsit, Jamie Chung, T.J. Miller",
+    "tags": "robot, superhero, tech, san fransokyo, loss"
   }
 ]

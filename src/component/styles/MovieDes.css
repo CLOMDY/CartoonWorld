@@ -1,0 +1,145 @@
+.movieDis {
+  position: relative;
+  top: 71px;
+}
+
+.thumb {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 9, 22, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumb:hover::after {
+  opacity: 1;
+}
+
+.iconBtn1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #83d147;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.iconBtn1 i {
+  position: absolute;
+  top: 29%;
+  left: 38%;
+}
+
+.thumb:hover .iconBtn1 {
+  display: block;
+}
+.titleName {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 111%;
+  color: white;
+  margin-top: 5px;
+}
+
+.HDBtn {
+  display: inline-block;
+  background-color: #79c142;
+  border-radius: 15px;
+  width: 40px;
+  color: #141e2d;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.titleName {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: white;
+  margin-top: 5px;
+}
+
+.movie-info-img {
+  flex-shrink: 0;
+  width: clamp(120px, 25vw, 200px);
+  border: 2px solid #b3b3b3;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.movie-info-text {
+  min-width: 300px;
+  flex-grow: 1;
+}
+
+.fixed-ratio-image {
+  aspect-ratio: 2/3;
+  max-width: 50%;
+  height: 50%;
+  display: block;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+}
+.movie-details-text {
+  font-size: clamp(0.65rem, 1vw + 0.3rem, 1rem);
+}
+
+
+.movie-details-text h2 {
+  font-size: clamp(1rem, 2vw + 0.4rem, 1.75rem);
+}
+
+.movie-details-text p,
+.movie-details-text .row {
+  font-size: clamp(0.65rem, 0.9vw + 0.3rem, 0.95rem);
+}
+
+.movie-details-text .col-9 {
+  font-size: clamp(0.65rem, 1vw + 0.3rem, 1rem);
+}
+/* Optional: Force smaller text below 550px */
+@media (max-width: 550px) {
+  .movie-details-text {
+    font-size: 0.7rem;
+  }
+
+  .movie-details-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .movie-details-text p,
+  .movie-details-text .row {
+    font-size: 0.7rem;
+  }
+}
+
+.fixed-1of3 {
+  width: 33.33%;
+  flex: 33.33%;
+  max-width: 33.33%;
+}
+

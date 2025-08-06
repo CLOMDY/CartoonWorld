@@ -2,6 +2,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './styles/Nav.css';
+import { Link } from 'react-router-dom';
 
 const navItems = [
   { label: 'Home' },
@@ -60,7 +61,7 @@ function Nav() {
             {item.submenu && (
               <div className="dp-content" id={`submenu-${item.label}`}>
                 {item.submenu.map((sub, i) => (
-                  <button key={i} className="link-button" onClick={() => console.log(sub)}>{sub}</button>
+                  <Link key={i} className="link-button" onClick={() => console.log(sub)}>{sub}</Link>
                 ))}
               </div>
             )}

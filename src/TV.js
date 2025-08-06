@@ -5,14 +5,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import TVMain from './component/TVMain';
+import Eps from './component/Eps';
+import MovieDes from './component/MovieDes';
 
 function TV() {
   return (
     <>
       <Nav />
       <Player />
-      <TVMain />
+      <Eps />
+      <MovieDes/>
       <AboutUs />
     </>
   );
