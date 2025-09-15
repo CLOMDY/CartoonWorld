@@ -249,54 +249,55 @@ function Grid() {
           <hr style={{ display: "block", width: "125px", marginTop: "0px" }} />
         </div>
         <div className="row" style={{ marginBottom: "20px" }}>
-          {[...movies].sort(() => Math.random() - 0.5).map((movie, index) => (
-            <div
-              className="col-12 col-sm-6 col-md-4 col-lg-4 fixed-1of3"
-              key={index}
-              style={{ padding: "5px" }}
-              onClick={(e) => {
-                const type = e.currentTarget.querySelector(".MorTY")?.textContent;
+          {[...movies] // make a copy
+            .sort(() => Math.random() - 0.5) // shuffle movies randomly
+            .map((movie, index) => {
+              const randomType = Math.random() > 0.5 ? "Movie" : "TV"; // randomize type
 
-                if (type === "TV") {
-                  navigate("/tv", {
-                    state: {
-                      imgSrc: movie.imgSrc,
-                      title: movie.title,
-                      coverSrc: movie.coverSrc,
-                    },
-                  });
-                } else if (type === "Movie") {
-                  navigate("/movie", {
-                    state: {
-                      imgSrc: movie.imgSrc,
-                      title: movie.title,
-                      coverSrc: movie.coverSrc,
-                    },
-                  });
-                }
-              }}
-            >
+              return (
+                <div
+                  className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1-5"
+                  key={index}
+                  style={{ padding: "5px", cursor: "pointer" }}
+                  onClick={() => {
+                    if (randomType === "TV") {
+                      navigate("/tv", {
+                        state: {
+                          imgSrc: movie.imgSrc,
+                          title: movie.title,
+                          coverSrc: movie.coverSrc,
+                        },
+                      });
+                    } else {
+                      navigate("/movie", {
+                        state: {
+                          imgSrc: movie.imgSrc,
+                          title: movie.title,
+                          coverSrc: movie.coverSrc,
+                        },
+                      });
+                    }
+                  }}
+                >
+                  <div className="thumb">
+                    <div className="iconBtn">
+                      <i className="fa">&#xf04b;</i>
+                    </div>
+                    <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
+                  </div>
 
-              <div className="thumb">
-                <div className="iconBtn">
-                  <i className="fa">&#xf04b;</i>
+                  <div className="titleName">{movie.title}</div>
+                  <div className="iconContent">
+                    <div className="iconYandDur">{movie.year}</div>
+                    <div className="iconDot">&#9679;</div>
+                    <div className="iconYandDur">{movie.duration}</div>
+                    <div className="MorTY">{randomType}</div>
+                  </div>
                 </div>
-                <img className="iconImg" src={movie.imgSrc} alt={movie.title} />
-              </div>
-
-              <div className="titleName">{movie.title}</div>
-              <div className="iconContent">
-                <div className="iconYandDur">{movie.year}</div>
-                <div className="iconDot">&#9679;</div>
-                <div className="iconYandDur">{movie.duration}</div>
-                <div className="MorTY">
-                  {Math.random() > 0.5 ? "Movie" : "TV"}
-                </div>
-
-              </div>
-            </div>
-          ))}
+              );
+            })}
         </div>
+
 
       </div>
     </div>
